@@ -145,7 +145,7 @@ void add_new_ele_specified_in_list(){
 
     list= slist_add_specified_ele(list,100,40);
 
-	  assert (slist_length(list) == 6);
+    assert (slist_length(list) == 6);
 }
 
 void del_specific_ele_from_list(){
@@ -165,7 +165,7 @@ void del_specific_ele_from_list(){
 
     list= slist_del_specified_ele(list,10);
 
-	  assert (slist_length(list) == 1);
+    assert (slist_length(list) == 1);
     assert (slist_lookup(list,10)==0);
     assert (slist_lookup(list,20)==1);
 }
@@ -187,7 +187,7 @@ void rev_list(){
 
     list= slist_del_specified_ele(list,10);
 
-	  assert (slist_length(list) == 1);
+    assert (slist_length(list) == 1);
     assert (slist_lookup(list,10)==0);
     assert (slist_lookup(list,20)==1);
 
@@ -197,14 +197,13 @@ void rev_list(){
 void compare_two_lists(){
     Slist s1 = slist_new();
     Slist s2 = slist_new();
-	  Slist *list1 = &s1;
-	  Slist *list2 = &s2;
-
-	  list1 = slist_addnode_head(list1, 100);
-	  list1 = slist_addnode_head(list1, 10);
+    Slist *list1 = &s1;
+    Slist *list2 = &s2;
+    list1 = slist_addnode_head(list1, 100);
+    list1 = slist_addnode_head(list1, 10);
 
     list2 = slist_addnode_head(list2, 100);
-	  list2 = slist_addnode_head(list2, 10);
+    list2 = slist_addnode_head(list2, 10);
 
     assert(compare_list(list1,list2)==1);
 }
@@ -213,20 +212,19 @@ void union_of_two_list(){
 
     Slist s1 = slist_new();
     Slist s2 = slist_new();
-	  Slist *list1 = &s1;
-	  Slist *list2 = &s2;
-	  Slist s3 = slist_new();
-	  Slist *union_list = &s3;
-
-	  list1 = slist_addnode_head(list1, 100);
-	  list1 = slist_addnode_head(list1, 10);
+    Slist *list1 = &s1;
+    Slist *list2 = &s2;
+    Slist s3 = slist_new();
+    Slist *union_list = &s3;
+    list1 = slist_addnode_head(list1, 100);
+    list1 = slist_addnode_head(list1, 10);
 
     list2 = slist_addnode_head(list2, 30);
-	  list2 = slist_addnode_head(list2, 40);
+    list2 = slist_addnode_head(list2, 40);
 
 
     union_list=union_two_list(union_list,list1,list2);
-	  assert (slist_length(union_list) == 4);
+    assert (slist_length(union_list) == 4);
 
 }
 
@@ -239,11 +237,11 @@ void intersection_of_two_list(){
     Slist *inter_list = &s3;
 
     list1 = slist_addnode_head(list1, 100);
-	  list1 = slist_addnode_head(list1, 10);
+    list1 = slist_addnode_head(list1, 10);
     list1 = slist_addnode_head(list1, 20);
 
     list2 = slist_addnode_head(list2, 100);
-	  list2 = slist_addnode_head(list2, 10);
+    list2 = slist_addnode_head(list2, 10);
     list2 = slist_addnode_head(list2, 40);
     inter_list=intersection_two_list(inter_list,list1,list2);
     assert (slist_length(inter_list)==2);
@@ -256,7 +254,7 @@ void unique_slist(){
 
 
     list1 = slist_addnode_head(list1, 100);
-	  list1 = slist_addnode_head(list1, 10);
+    list1 = slist_addnode_head(list1, 10);
     list1 = slist_addnode_head(list1, 20);
 
     list1=unique_of_slist(list1,40);
