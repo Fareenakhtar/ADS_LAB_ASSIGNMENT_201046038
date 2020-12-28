@@ -1,4 +1,4 @@
-# ADS_LAB_ASSIGNMENT_201046038
+# SHAIK_FAREEN_AKHTAR_201046038_LINKED_LIST_ASSIGNMENT
 
 1. Create a single list with methods to add and delete elements from head and tail positions. Provide method to check whether an element is present in the list. Count number of elements in the list.
 
